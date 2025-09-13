@@ -25,6 +25,7 @@
               rust-analyzer
               taplo
               cargo-watch
+              pre-commit
             ];
           };
       }
