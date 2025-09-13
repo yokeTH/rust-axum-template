@@ -1,0 +1,18 @@
+[package]
+name = "rust-axum-template"
+version = "0.1.0"
+edition = "2024"
+
+[workspace]
+members = ["crates/server"]
+
+[workspace.dependencies]
+axum = { version = "0.8.4" }
+
+[dependencies]
+tokio = { version = "1.46.1", features = ["full"] }
+axum = { workspace = true, features = ["tokio", "http1", "http2"] }
+server = { path = "crates/server" }
+log = { version = "0.4", features = ["std", "serde"] }
+env_logger = "0.11.8"
+dotenvy = "0.15.7"

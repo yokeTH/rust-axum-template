@@ -1,0 +1,10 @@
+# rust
+/target
+
+
+# Nix
+.direnv
+
+# .env
+.env
+!.env.example
